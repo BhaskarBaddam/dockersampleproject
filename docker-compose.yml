@@ -4,17 +4,17 @@ services:
     image: baddam355/dockertrain:latest
     ports:
       - "81:80"
-    deploy
+    deploy:
       replicas: 3
   dth:
     image: baddam355/dockerdth:latest
     ports:
       - "82:80"
-    deploy
+    deploy:
       replicas: 3
   movies:
     image: baddam355/dockermovies:latest
     ports:
       - "83:80"
-    deploy
+    deploy:
       replicas: 3

@@ -1,19 +1,19 @@
 version: '3'
 services:
   train:
-    image: rahamshaik/paytmtrain:latest
+    image: baddam355/dockertrain:latest
     ports:
       - "81:80"
     deploy
       replicas: 3
   dth:
-    image: rahamshaik/paytmdth:latest
+    image: baddam355/dockerdth:latest
     ports:
       - "82:80"
     deploy
       replicas: 3
   movies:
-    image: rahamshaik/paytmmovies:latest
+    image: baddam355/dockermovies:latest
     ports:
       - "83:80"
     deploy

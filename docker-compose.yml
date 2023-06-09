@@ -1,0 +1,20 @@
+version: '3'
+services:
+  train:
+    image: rahamshaik/paytmtrain:latest
+    ports:
+      - "81:80"
+    deploy
+      replicas: 3
+  dth:
+    image: rahamshaik/paytmdth:latest
+    ports:
+      - "82:80"
+    deploy
+      replicas: 3
+  movies:
+    image: rahamshaik/paytmmovies:latest
+    ports:
+      - "83:80"
+    deploy
+      replicas: 3
